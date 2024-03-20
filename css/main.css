@@ -61,13 +61,22 @@ div.content-wrapper{
     margin-inline: auto;
     margin-bottom: 80px;
 }
-/* all divs need to have the same height ==> insert media later */
+
 div.content{
-    text-align: center;
-    background-color: rgb(122, 41, 41);
-    width: 300px;
-    height: 300px;
+    width: 800px;
+    height: 800px;
     display: flex;
+    flex-direction: column-reverse; /* Arrange content vertically */
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Style the image within the content */
+div.content img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; 
 }
