@@ -65,7 +65,7 @@ div.content-wrapper{
 div.content{
     width: 800px;
     display: flex;
-    flex-direction: column-reverse; /* Arrange content vertically */
+    flex-direction: column; /* Arrange content vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -78,4 +78,29 @@ div.content img {
     max-width: 100%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; 
+}
+.content p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.content .image{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.content > button{
+    margin-bottom: 20px;
+}
+.content .image.hovered:hover{
+    cursor: pointer;
+}
+.content button{
+    padding: 0;
+    border: 0;
+}
+[popover]:-internal-popover-in-top-layer::backdrop {
+    background-color: rgba(0, 0, 0, 0.621);
+}
+.popoverdiv{
+    padding: 0;
 }
